@@ -132,7 +132,7 @@ button:hover span
 }
 button:hover
 {
-    border:transparent;
+    border: 2px solid #2ec0f9;    
 }
 
 .container
