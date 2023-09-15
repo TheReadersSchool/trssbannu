@@ -5,10 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Readers School System</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="media/logo.png">
 
         <style>
+        
+         /* .banner, .content{
+            margin-bottom: 100vh;
+         } */
+         body{
+            background-color: #98d6ef;
+         }
+        label {
+            color: #fff;
+        }
          form
          {
             display: flex;
@@ -16,12 +27,14 @@
             width: 60%;
             gap: 1rem;
             margin-left: 10%;
+            padding-top: 5vh;
          }
          input, select, textarea
          {
-            padding: 1.4rem;
+            padding: 1.2rem;
             background: transparent;
-            border: 1px solid black;
+            border: 1px solid white;
+            
          }   
          textarea
          {
@@ -30,12 +43,35 @@
 
          .send
          {
-            width: 8rem;
+            width: 7rem;
             padding: 1.4rem;
+            margin-left: 18vh;
             cursor: pointer;
-            background: #2ec0f9;
+            background: #75cbee;
             color: white;
             text-align: center;
+            border: none;
+         }
+         .send:hover{
+            background: #04455f;
+            border: none;
+         }
+          
+         .contact-us
+         {
+            width: 500px;
+            height: 550px;
+            box-shadow:0 0 30px 0 #1d0808 ;
+            top: 30vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: relative;
+            border-radius: 15%;
+            background-color: rgb(141, 141, 238);
+
+         }
+         .title{
+            color: #fff;
          }
 
         </style>
@@ -56,89 +92,94 @@
             <div class="content">
                 <h1>Contact Us!</h1>
                 <p>Email us about any bugs, queries, messages or requests.<br>
-                Our team will be eager to help sort your queries out.<br>
-                Visit our main campus at Hasani Chowk, Darasha Kela, Bannu, Khyber PakhtunKhwa.
-                <br>
-                You can send us mail at 28030 postal code bannu by the name of our school.
+                    Our team will be eager to help sort your queries out.<br>
+                    Visit our main campus at Hasani Chowk, Darasha Kela, Bannu,
+                    Khyber PakhtunKhwa.
+                    <br>
+                    You can send us mail at 28030 postal code bannu by the name
+                    of our school.
                 </p>
 
                 <div>
-                    <button type="button" onclick="takemehome()"><span></span>Take Me Home!</button>
+                    <button type="button" onclick="takemehome()"><span></span>Take
+                        Me Home!</button>
                 </div>
             </div>
-    
+
         </div>
 
-        
-        
-            
-                <h2 class="title">Contact Form</h1>
-                    <form action="https://formspree.io/f/moqojjvq" method="POST">
-                        <input type="text" name="Name" placeholder="Full Name" required>
-                        <input type="email" name="Email" placeholder="Email" required>
-                        <select name="Query">
-                            <option>Enrollment Details</option>
-                            <option>Bug Report</option>
-                            <option>Message or Request</option>
-                            <option>Other</option>
-                        </select>
-                        <textarea name="Message" placeholder="Enter Your Message Here!" cols="30" rows="10" required></textarea>
-                        <button type="submit" class="send">Send</button>
-                    </form>
-                    
+        <h2 class="title">Contact Form</h1>
+        <div class="contact-us">
+            <form action="https://formspree.io/f/moqojjvq" method="POST">
+                <label>Name</label>
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <label>Email</label>
+                <input type="email" name="Email" placeholder="Email" required>
+                <!-- <select name="Query">
+                    <option>Enrollment Details</option>
+                    <option>Bug Report</option>
+                    <option>Message or Request</option>
+                    <option>Other</option>
+                </select> -->
+                <label>Message</label>
+                <textarea name="Message" placeholder="Enter Your Message Here!"
+                    cols="30" rows="10" required></textarea>
+                <button type="submit" class="send">Send</button>
+            </form>
+        </div>
 
-        
-                
-        
-        
-       
-<!--Footer-->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col-1">
-                <h3>Certified by Government of Pakistan</h3>
-                <p>Registered School Since 2017</p>
-                <div class="app-logo">
-                    <img src="media/biseb.png">
-                    <img src="media/HEC.jpeg">
+        <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Certified by Government of Pakistan</h3>
+                        <p>Registered School Since 2017</p>
+                        <div class="app-logo">
+                            <img src="media/biseb.png">
+                            <img src="media/HEC.jpeg">
+                        </div>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/syed-muhammad-atif-468b3824b/ "
+                                    target="_blank">Website Developer</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/ReadersSchoolSystem"
+                                    target="_blank">Our Facebook Page</a>
+                            </li>
+                            <li>
+                                <a href="http://www.biseb.edu.pk/"
+                                    target="_blank">BISE Bannu</a>
+                            </li>
+                            <li>
+                                <a href="https://psra.gkp.pk/en/"
+                                    target="_blank">Private School Regulatory
+                                    Authority</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+                <hr>
+                <p class="Copyright">Copyright 2023 - The Readers School System,
+                    Bannu. <br>Developed by Syed Muhammad Atif.</p>
             </div>
-            
-            <div class="footer-col-3">
-                <h3>Useful links</h3>
-                 <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/syed-muhammad-atif-468b3824b/ " target="_blank">Website Developer</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/ReadersSchoolSystem" target="_blank">Our Facebook Page</a>
-                    </li>
-                    <li>
-                        <a href="http://www.biseb.edu.pk/" target="_blank">BISE Bannu</a>
-                    </li>
-                    <li>
-                        <a href="https://psra.gkp.pk/en/" target="_blank">Private School Regulatory Authority</a>
-                    </li>
-                 </ul>
-            </div>
-            
         </div>
-        <hr>
-        <p class="Copyright">Copyright 2023 - The Readers School System, Bannu. <br>Developed by Syed Muhammad Atif.</p>
-    </div>
-</div>
 
-<script>
+        <script>
     function takemehome() {
     //send me home baby
     window.location.href = "index.html";
   }
 </script>
-        
-</body>
+
+    </body>
 
 </html>
-
-
-
