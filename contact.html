@@ -10,6 +10,7 @@
       integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
       crossorigin="anonymous"
     />
+
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link
       rel="stylesheet"
@@ -25,7 +26,7 @@
         font-family: "Poppins", sans-serif;
       }
       .contact {
-        position: relative;
+        /* position: relative;
         min-height: 100vh;
         padding: 50px 100px;
         display: flex;
@@ -33,12 +34,28 @@
         align-items: center;
         flex-direction: column;
         /* background: url(media/anthem1.jpg); */
+        /* background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(media/anthem.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%; */
+        position: relative;
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
           ),
-          url(media/anthem1.jpg);
+          url(media/background.jpg);
         background-size: cover;
+        background-position: center;
       }
 
       .contact .content {
@@ -48,8 +65,8 @@
       .contact .content h2 {
         font-size: 36px;
         font-weight: 500;
-        color:#2ec0f9;
-        margin-bottom:1vh ;
+        color: #2ec0f9;
+        margin-bottom: 1vh;
       }
       .contact .content p {
         font-weight: 300;
@@ -151,10 +168,6 @@
         padding: 10px;
         font-size: 18px;
       }
-      @media(max-widh:882px)
-      {
-
-      }
 
       @media (max-width: 991px) {
         .contact {
@@ -253,37 +266,7 @@
 
      
 
-
-      .contact .navbar {
-        width: 85%;
-        margin: auto;
-        padding: 0;
-        margin-bottom: 5vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .logo {
-        width: 120px;
-        padding-left: 0;
-        cursor: pointer;
-      }
-
-      .navbar ul li {
-        list-style: none;
-        display: inline-block;
-        margin: 0 20px;
-        position: relative;
-      }
-
-      .navbar ul li a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-      }
-
-      .navbar ul li::after {
+      nav ul li::after {
         content: "";
         height: 3px;
         width: 0%;
@@ -293,23 +276,171 @@
         bottom: -10px;
         transition: 0.5s;
       }
-      .navbar ul li:hover::after {
+      nav ul li:hover::after {
         width: 100%;
+      } 
+
+      
+      nav .logo img {
+        height: 120px;
+        cursor: pointer;
       }
+      nav {
+        width: 85%;
+        margin: auto;
+        padding: 16px 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0 22px;
+        position: relative;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        /* letter-spacing: 1px; */
+      }
+      nav .menu-btn i {
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        font-size: 22px;
+      }
+      #click
+      {
+        display: none;
+      }
+
+      @media (max-width: 920px) {
+        .footer {
+        
+        
+        padding: 240px 0 20px;
+      }
+        nav .logo img {
+        height: 90px;
+        cursor: pointer;
+        padding-bottom: 20px;
+      }
+      nav ul li::after
+      {
+        transition: 1s;
+      }
+        nav
+        {
+          padding: 10px 0;
+        }
+
+        nav .menu-btn i 
+        {
+          display: block;
+        }
+        #click:checked ~ .menu-btn i:before 
+        {
+          content: "\f00d";
+        }
+        
+        nav ul {
+          position: fixed;
+
+          top: 120px;
+          left: -100%;
+          background: #111;
+          z-index: 10;
+          height: 100vh;
+          width: 100%;
+          display: block;
+          text-align: center;
+          transition: all 0.3s ease;
+        }
+        #click:checked ~ ul 
+        {
+          left: 0%;
+        }
+        nav ul li {
+          margin: 40px 0;
+        }
+        nav ul li a {
+          font-size: 20px;
+          display: block;
+        }
+      }
+
+      @media (max-width: 818px)
+      {
+        .footer {
+        
+        
+        padding: 300px 0 20px;
+      }
+      }
+      @media (max-width: 540px)
+      {
+        .footer {
+        
+        
+        padding: 350px 0 0px;
+      }
+      }
+      
+      
+      @media (max-width: 992px)
+      {
+        .footer {
+        
+        
+        padding: 250px 0 20px;
+      }
+      }
+
+     
+
+
+
     </style>
   </head>
 
   <body>
     <section class="contact">
-      <div class="navbar">
+      <!-- <div class="navbar">
         <img src="media/logo.png" alt="logo" class="logo" />
+         <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label> -->
+      <!--<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div> -->
+      <nav>
+        <div class="logo">
+          <img src="media/logo.png" alt="logo" />
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="faculty.html">Faculty</a></li>
           <li><a href="gallery.html">Photo Gallery</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="content">
         <h2>Contact Us</h2>
         <p>
