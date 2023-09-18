@@ -1,0 +1,114 @@
+/* Style for the footer container */
+.footer {
+    background-color: black;
+    color: #ffffff;
+    padding-top: 90px;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  
+  /* Style for the footer content */
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  /* Style for the left column */
+  .footer-col-1 {
+    flex: 1;
+    max-width: 40%;
+    text-align: left;
+    padding-left: 170px;
+  }
+  
+  .footer-col-1 h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-col-1 p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .app-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; /* Add some space between images and text */
+  }
+  
+  .app-logo img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Style for the right column */
+  .footer-col-3 {
+    flex: 1;
+    max-width: 30%;
+    text-align: left;
+    padding-left: 0px;
+  }
+  
+  .footer-col-3 h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-col-3 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col-3 li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-col-3 a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .footer-col-3 a svg {
+    height: 0.8em;
+    margin-right: 4px;
+  }
+  
+  .footer-col-3 a img {
+    height: 12px;
+    border-radius: 50%;
+    width: 12px;
+    margin-right: 4px;
+  }
+  
+  /* Style links on hover */
+  .footer-col-3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .container hr 
+  {
+    width: 80%;
+    align-items: center;
+    margin: 10px;
+  }
+
+  /* Style the copyright text */
+  .Copyright {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  

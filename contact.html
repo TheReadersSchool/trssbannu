@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="footer.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,7 +26,6 @@
         font-family: "Poppins", sans-serif;
       }
       .contact {
-       
         position: relative;
         padding: 15px 10px;
         display: flex;
@@ -171,85 +170,8 @@
         }
       }
       /* footer part of the page */
-      .footer {
-        background: #000;
-        color: #8a8a8a;
-        font-size: 14px;
-        padding: 60px 0 20px;
-      }
-
-      .footer p {
-        color: #8a8a8a;
-      }
-
-      .footer h3 {
-        color: #fff;
-        margin-bottom: 20px;
-      }
-
-      .footer-col-1,
-      .footer-col-2,
-      .footer-col-3,
-      .footer-col-4 {
-        min-width: 250px;
-        margin-bottom: 20px;
-      }
-
-      .footer-col-1 {
-        flex-basis: 30%;
-      }
-
-      .footer-col-2 {
-        flex: 1;
-        text-align: center;
-      }
-
-      .footer-col-2 img {
-        width: 180px;
-        margin-bottom: 20px;
-      }
-
-      .footer-col-3,
-      .footer-col-4 {
-        flex-basis: 12%;
-        text-align: center;
-      }
-
-      ul {
-        list-style-type: none;
-      }
-
-      ul li a {
-        text-decoration: none;
-        color: #b5b5b5;
-      }
-
-      .app-logo {
-        margin-top: 20px;
-      }
-
-      .app-logo img {
-        width: 140px;
-      }
-
-      .footer hr {
-        border: none;
-        background: #b5b5b5;
-        height: 1px;
-        margin: 20px 0;
-      }
-      .Copyright {
-        text-align: center;
-      }
-
-      .eighty {
-        max-width: 80%;
-        margin: 0 auto;
-      }
 
       /*main page */
-
-     
 
       nav ul li::after {
         content: "";
@@ -263,9 +185,8 @@
       }
       nav ul li:hover::after {
         width: 100%;
-      } 
+      }
 
-      
       nav .logo img {
         height: 120px;
         cursor: pointer;
@@ -302,40 +223,33 @@
         display: none;
         font-size: 22px;
       }
-      #click
-      {
+      #click {
         display: none;
       }
 
       @media (max-width: 920px) {
         .footer {
-        
-        
-        padding: 240px 0 20px;
-      }
+          padding: 240px 0 20px;
+        }
         nav .logo img {
-        height: 90px;
-        cursor: pointer;
-        padding-bottom: 20px;
-      }
-      nav ul li::after
-      {
-        transition: 1s;
-      }
-        nav
-        {
+          height: 90px;
+          cursor: pointer;
+          padding-bottom: 20px;
+        }
+        nav ul li::after {
+          transition: 1s;
+        }
+        nav {
           padding: 10px 0;
         }
 
-        nav .menu-btn i 
-        {
+        nav .menu-btn i {
           display: block;
         }
-        #click:checked ~ .menu-btn i:before 
-        {
+        #click:checked ~ .menu-btn i:before {
           content: "\f00d";
         }
-        
+
         nav ul {
           position: fixed;
 
@@ -349,8 +263,7 @@
           text-align: center;
           transition: all 0.3s ease;
         }
-        #click:checked ~ ul 
-        {
+        #click:checked ~ ul {
           left: 0%;
         }
         nav ul li {
@@ -362,35 +275,84 @@
         }
       }
 
-      @media (max-width: 818px)
-      {
+      @media (max-width: 818px) {
         .footer {
-        
-        
-        padding: 300px 0 20px;
+          padding: 300px 0 20px;
+        }
       }
-      }
-      @media (max-width: 540px)
-      {
+      @media (max-width: 540px) {
         .footer {
-        
-        
-        padding: 350px 0 0px;
-      }
-      }
-      
-      
-      @media (max-width: 992px)
-      {
-        .footer {
-        
-        
-        padding: 250px 0 20px;
-      }
+          padding: 350px 0 0px;
+        }
       }
 
-     
+      @media (max-width: 992px) {
+        .footer {
+          padding: 250px 0 20px;
+        }
+      }
 
+      @media (max-width: 940px) {
+        .footer-col-3 h3 {
+          font-size: 16px;
+          margin-bottom: 4px;
+        }
+        .footer-col-3 a {
+    
+    
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .footer-col-1 h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .footer-col-1 p {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+      }
+      @media (max-width: 816px)
+      {
+        .footer {
+    
+    padding-top: 300px;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+        .footer .container {
+    display: block;
+    flex-direction: row;
+    align-items: row;
+    text-align: row;
+  }
+  @media (max-width: 700px)
+  {
+    .footer-col-3 h3 {
+          font-size: 13px;
+          margin-bottom: 2px;
+        }
+  }
+  .footer-col-3 a {
+    font-size: 12px;
+  }
+  .footer-col-1 h3 {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .footer-col-1 p {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .app-logo img {
+    max-width: 35%;
+    height: auto;
+    margin-right: 5px;
+  }
+
+
+      }
 
 
     </style>
@@ -398,16 +360,14 @@
 
   <body>
     <section class="contact">
-      
-      
       <nav>
         <div class="logo">
           <img src="media/logo.png" alt="logo" />
         </div>
-        <input type="checkbox" id="click">
+        <input type="checkbox" id="click" />
         <label for="click" class="menu-btn">
           <i class="fa fa-bars" aria-hidden="true"></i>
-          </label>
+        </label>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="faculty.html">Faculty</a></li>
@@ -499,24 +459,52 @@
                 <a
                   href="https://www.linkedin.com/in/syed-muhammad-atif-468b3824b/ "
                   target="_blank"
-                  >Website Developer</a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                  &nbsp;Website Developer</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/ReadersSchoolSystem"
                   target="_blank"
-                  >Our Facebook Page</a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                  &nbsp;Our Facebook Page</a
                 >
               </li>
               <li>
                 <a href="http://www.biseb.edu.pk/" target="_blank"
-                  >BISE Bannu</a
+                  ><img
+                    src="media/biseb.png"
+                    alt=""
+                    style="height: 15px; border-radius: 50%; width: 15px"
+                  />&nbsp;BISE Bannu</a
                 >
               </li>
               <li>
                 <a href="https://psra.gkp.pk/en/" target="_blank"
-                  >Private School Regulatory Authority</a
+                  ><img
+                    src="media/psra_log.png"
+                    alt=""
+                    style="height: 17px; border-radius: 50%; width: 17px"
+                  />&nbsp;Private School Regulatory Authority</a
                 >
               </li>
             </ul>
